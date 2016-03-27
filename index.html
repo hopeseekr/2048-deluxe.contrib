@@ -27,9 +27,11 @@
 
     <div class="above-game">
       <div id="instructions">
+        <p class="game-intro">Hit 'Z' to <a href="#" onclick="handle_undo(); return false;">take back one or more moves</a>.</p>
         <p class="game-intro" >Join the numbers and get to the <span style="background-color: #DAB500;color: #ffffff;">2048</span> tile!</p>
       </div>
       <div id="gameControls">
+        <a class="undo-button" id="undo-button-id" onclick="handle_undo();"><img src="undo.png" /></a>
         <a class="restart-button" id="restart-button-id"><img src="new.png" />New Game</a>
       </div>
     </div>
